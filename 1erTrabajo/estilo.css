@@ -9,3 +9,9 @@ p {
     font-size: 17px;
     text-align: justify;
 }
+
+strong {
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 17px;
+}   
