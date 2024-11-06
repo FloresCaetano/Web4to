@@ -15,3 +15,17 @@ strong {
     font-family: monospace;
     font-size: 17px;
 }   
+
+dt{
+    font-family: monospace;
+    color: blue;
+    font-size: 19px;
+}
+
+dd{
+    font-family: monospace;
+    color: white;
+    font-size: 17px;
+}
+
+
