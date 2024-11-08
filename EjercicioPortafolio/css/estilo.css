@@ -3,6 +3,10 @@ header{
     text-align: center;
 }
 
+h3{
+    color: crimson;
+}
+
 .circularImage{
     width: 20%;
     height: 30%;
