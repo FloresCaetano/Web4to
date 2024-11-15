@@ -10,8 +10,37 @@
     <div class="container">
         <header>
             <center><h1>Redes sociales</h1></center> 
+            <nav> <!--TODO-->>
+                <a href="index.html">Home</a> | 
+                <a href="index1.html" target="_blank">Facebook</a> | 
+                <a href="index2.html" target="_blank">Instagram</a> | 
+                <a href="index.html">WhatsApp</a>
+            </nav>
         </header>
 
+        <input type="text" id="buscar" placeholder="Buscar">
+        <button class="botonbuscar">Buscar</button>
+
+        <form action="submit" method="post">
+            <br>
+            <label>Nombres: </label>
+            <input type="text", id="txtNombres", placeholder="nombres">
+            <br>
+            <label>Apellidos: </label>
+            <input type="text", id="txtApellidos", placeholder="apellidos">
+            <br>
+            <label>Password: </label>
+            <input type="password", id="txtContraseña", placeholder="contraseña">
+            <br><br>
+            <label>Tipo:</label>
+            <select>
+                <option>Estudiante</option>
+                <option>Docente</option>
+                <option>Administrativo</option>
+            </select>
+            <br>
+            <button class="boton">guardar</button>
+        </form>
         <section>
             <a href="https://www.facebook.com" target="_blank"><h2 id="facebookTitle">Facebook</h2></a>
             <p>Facebook <strong>una red social fundada por Mark Zuckerberg</strong> en 2004, que se ha convertido en una de las plataformas de redes sociales más populares</p>
@@ -31,6 +60,7 @@
                     <img src="media\facebook.png" alt="facebook" width="500" height="300">
                 </a>
             </center>
+            <button class="boton">Visitar Pagina</button>
         </section>
 
         <section>
@@ -75,7 +105,8 @@
             </center>
         </section>
         
-        <footer>
+        <footer class="flexStyle">
+            <p class="estiloFooter">Copyright -2024 Caetanilo Flora</p>
             <p class="estiloFooter">Copyright -2024 Caetanilo Flora</p>
         </footer>
     </div>

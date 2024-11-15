@@ -1,0 +1,40 @@
+header{
+    background-color: cornsilk;
+    text-align: center;
+}
+
+h3{
+    color: crimson;
+}
+
+.circularImage{
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+ul{
+    text-align: left;
+}
+
+footer{
+    color: beige;
+    text-align: center;
+    background-color: crimson;
+}
+
+.container{
+    background-color: rgb(154, 154, 154);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article{
+    background-color: rgb(222, 222, 222);
+    text-align: left;
+    max-width: 800px;
+    margin-left: 10px;
+    
+}

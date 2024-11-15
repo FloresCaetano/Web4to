@@ -47,3 +47,35 @@ footer{
     max-width: 800px;
     margin: 0 auto;
 }
+
+div > p {
+    color: black;
+}
+
+.boton {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(15, 15, 14);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(0, 149, 255);
+  }
+  
+.botonbuscar {
+    color: rgb(202, 216, 5);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(227, 50, 92);
+  }
+
+  .flexStyle{
+    border-color: red;
+    border-width: 6px;
+    border-style: inset;
+    display: flex;
+    justify-content: center;
+  }
