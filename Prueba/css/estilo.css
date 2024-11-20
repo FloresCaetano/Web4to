@@ -121,3 +121,36 @@ input[placeholder = "nombres"]::placeholder{
 input:focus{
     outline: none;
 }
+
+.chatbot{
+    position: fixed;
+    background-color: white;
+    width: 300px;
+    min-height: 100px;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin: 20px;
+}
+
+.chatbot_title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-around;
+    background-color: green;
+    color: white;
+}
+
+textarea{
+    min-width: 200px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+table{
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
