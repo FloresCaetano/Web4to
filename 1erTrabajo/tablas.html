@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\tablasbg.css">
+    <title>Caetano Flores</title>
+</head>
+<body>
+    <header>
+        <h1>Tablas</h1>
+        <p>El uso de la etiqueta table, es para el envio y recepción de información</p>
+    </header>
+    <section>
+        <article>
+            <form action="submit" method="post">
+                <br>
+                <label>Nombres: </label>
+                <input type="text", maxlength="20" id="txtNombres", placeholder="nombres">
+                <br>
+                <label>Apellidos: </label>
+                <input type="text", maxlength="20", id="txtApellidos", placeholder="apellidos">
+                <br>
+                <label>Password: </label>
+                <input type="password", minlength="5", maxlength="10", id="txtContraseña", placeholder="contraseña">
+                <br>
+                <label>Tipo:</label>
+                <select>
+                    <option>Estudiante</option>
+                    <option>Docente</option>
+                    <option>Administrativo</option>
+                </select>
+                <br>
+                <label>Observacion: </label>
+                <textarea name="txtaObservacion"></textarea>
+                <input type="submit" value="Enviar datos">
+            </form>
+        </article>
+    </section>
+
+</body>
+
+</html>

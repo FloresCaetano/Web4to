@@ -1,0 +1,46 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background: rgb(29,0,36);
+    background: radial-gradient(circle, rgba(29,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 64%);
+    color: white;
+}
+
+caption{
+    background-color: blue;
+    color: white;
+}
+
+.centeredColumn{
+    text-align: center;
+}
+
+input[type = "text"]{
+    background-color: transparent;
+    color: blue;
+    border: 0px;
+    outline: none;
+    border-bottom: 2px solid blue;
+    border-radius: 0px;
+}
+
+input[type = "password"]{
+    color: blueviolet;
+    background-color: black;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+}
+
+input[type = "password"]::placeholder{
+    color: white;
+}
+
+input[placeholder = "nombres"]::placeholder{
+    color: green;
+}
+
+input:focus{
+    outline: none;
+}
