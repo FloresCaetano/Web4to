@@ -9,75 +9,22 @@
 
     </header>
 </head>
-<body class="page">
-    <header>
-        <center><h1>Electronicos Caetano</h1></center> 
-        <strong>
-            <nav class="barra_nav">
-                    <li><a href="index.html#Computadoras">Computadoras</a></li>
-                    <li><a href="index.html#Celulares">Computadoras</a></li>
-                    <li><a href="#index.html#TVs">TVs</a></li>
-                    <li><a href="">Contactos</a></li>
-            </nav>
-        </strong>            
-    </header>
+<body>
     <center>
-    <article>
-        <table frame="void" rules="rows" border="3px" cellpadding = "10px" cellspacing="0px">
-            <colgroup>
-                <col style="background-color: bisque; min-width: 300px;">
-                <col style="background-color: bisque; min-width: 300px;"> 
-                <col style="background-color: bisque; min-width: 300px;">
-                <col style="background-color: bisque; min-width: 300px;"> 
-            </colgroup>
-            <thead>
-                <tr style="background-color: green; color: white;">
-                    <th align="center" width="150px";">PRODUCTO</th>
-                    <th>CATEGORIA</th>   
-                    <th>PRECIO</th>
-                    <th align="center" width="150px">STOCK</th>
-                </tr>
-            </thead>
-            <tbody class="centeredColumn">
-                <tr>
-                    <td>PRODUCTO</td>
-                    <td>CATEGORIA</td>
-                    <td>PRECIO</td>
-                    <td>STOCK</td>
-                </tr>
-                <tr>
-                    <td>Lenovo</td>
-                    <td>Computadoras</td>
-                    <td>$400</td>
-                    <td>100u</td>
-                </tr>
-                <tr>
-                    <td>Lenovo</td>
-                    <td>Computadoras</td>
-                    <td>$400</td>
-                    <td>100u</td>
-                </tr>
-                <tr>
-                    <td>Lenovo</td>
-                    <td>Computadoras</td>
-                    <td>$400</td>
-                    <td>100u</td>
-                </tr>
-                <tr>
-                    <td>Lenovo</td>
-                    <td>Computadoras</td>
-                    <td>$400</td>
-                    <td>100u</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td>sum</td>
-                <td>sum</td>
-                <td>sum</td>
-                <td>sum</td>
-            </tfoot>
-        </table>
-    </article>
+        <section class="login">
+            <br>
+            <img src="media/login.png" alt="lenovo" width="30%" height="30%">
+            <form action="submit" method="post">
+                <br>
+                <input type="text", maxlength="20", id="txtUsername", placeholder="Username">
+                <br>
+                <input type="password", minlength="5", maxlength="10", id="txtContraseña", placeholder="contraseña">
+                <br>
+                <input type="checkbox">
+                <br>
+            </form> 
+            <button onclick="location.href='index.html';">LOGIN</button>
+        </section>
     </center>
 </body>
 

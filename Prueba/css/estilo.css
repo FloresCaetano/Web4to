@@ -84,3 +84,40 @@ article{
 .page{
     margin-top: 130px;
 }
+
+.login{
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 100px;
+    background-color: white;
+}
+
+input[type = "text"]{
+    background-color: transparent;
+    color: black;
+    border: 0px;
+    outline: none;
+    border-bottom: 2px solid blue;
+    border-radius: 0px;
+}
+
+input[type = "password"]{
+    background-color: transparent;
+    color: black;
+    border: 0px;
+    outline: none;
+    border-bottom: 2px solid blue;
+    border-radius: 0px;
+}
+
+input[type = "password"]::placeholder{
+    color: white;
+}
+
+input[placeholder = "nombres"]::placeholder{
+    color: green;
+}
+
+input:focus{
+    outline: none;
+}
