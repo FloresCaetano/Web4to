@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\estilo.css">
+    <link rel="stylesheet" href="css/loginEstilo.css">
     <title>Caetano Flores</title>
-    <header>
-
-    </header>
 </head>
 <body>
-    <center>
-        <section class="login">
-            <br>
-            <img src="media/login.png" alt="lenovo" width="30%" height="30%">
+    <section class="login-container">
+        <div class="login-box">
+            <img src="media/login.png" alt="Login Icon" class="login-logo">
+            <h2>Iniciar Sesión</h2>
             <form action="index.html" method="post">
-                <br>
-                <input type="text", maxlength="20", id="txtUsername", placeholder="Username", required>
-                <br>
-                <input type="password", minlength="5", maxlength="10", id="txtContraseña", placeholder="contraseña", required>
-                <br>
-                <input type="checkbox">
-                <br>
-                <button onclick="location.href='index.html';">LOGIN</button>
+                <input type="text" maxlength="20" id="txtUsername" placeholder="Username" required>
+                <input type="password" minlength="5" maxlength="10" id="txtPassword" placeholder="Contraseña" required>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span>Recordarme</span>
+                </label>
+                <button type="submit">LOGIN</button>
             </form>
-        </section>
-    </center>
+        </div>
+    </section>
 </body>
-
 </html>
