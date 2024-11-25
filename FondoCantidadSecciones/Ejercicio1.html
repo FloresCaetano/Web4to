@@ -6,24 +6,41 @@
     <title>CARD</title>
     <link rel="stylesheet" href="./estilos/Ejercicio1Estilo.css">
 </head>
-<body>
+<body id="page-body">
     <div class="card">
         <div class="card_header">
-            <h2 class="card_title"></h2>
+            <img src="./media/i like ur hair.png" alt="">
+            <article class="button">
+                <button>Comprar</button>
+            </article>
         </div>
         <div class="card_body">
             <div class="card_content">
-                <h2>ADIDAS</h2>
-                <h4>Men's running shirt</h4>
-                <h3 class="size">Sizes</h3>
-                <h4>XS, S, M, L, XL, XXL</h4>
-                <h3 class="color">Colors</h3>
-                <label class="red">r</label>
-                <label class="blue">a</label>
-                <label class="white">b</label>
-                <label class="green">v</label>
+                <article class="title">
+                    <h2>The face collector</h2>
+                    <h3>$15</h3>
+                </article>
+                <h4>Juego de terror donde debes explorar</h4>
+                <h3 class="size">Requisitos</h3>
+                <h4>intelHD4400 / I3 7ma gen</h4>
+                <h3 class="color">Categorias</h3>
+                <label class="white">terror</label>
+                <label class="white">aventura</label>
+                <label class="white">psx1</label>
             </div>
         </div>
     </div>
 </body>
+<script>
+    const body = document.getElementById("page-body");
+    const card = document.querySelector(".card");
+
+    card.addEventListener("mouseover", () => {
+        body.style.backgroundColor = "#000";
+    });
+
+    card.addEventListener("mouseout", () => {
+        body.style.backgroundColor = "#747683";
+    });
+</script>
 </html>

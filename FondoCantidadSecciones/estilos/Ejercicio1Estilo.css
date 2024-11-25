@@ -16,9 +16,57 @@ body{
     background-color: #ddd;
 }
 
+.card:hover ~body{
+    background-color: #000;
+}
+
 .card_header{
+    align-items: center;
+    justify-content: center;
     height: 350px;
-    background-image: url("../media/500x500.png");
+    margin-bottom: 5%
+}
+
+.card_header img{
+    width: 100%;
+    height: auto;
+    filter: brightness();
+    transform: translate();
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.card_header .button{
+    position: absolute;
+    top: 35%;
+    left: 50%;;
+    transform: translate(-50%);
+    display: none;
+}
+
+.button button{
+    color: white;
+    background: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover button{
+    background: fixed;
+    background-color: white;
+    color: #000;
+}
+
+.card_header:hover img{
+    filter: brightness(0.5);
+    transform: translate(-3%);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.card_header:hover .button{
+    display: block;
 }
 
 h4{
@@ -59,8 +107,8 @@ h4{
 .white{
     border: 1px solid white;
     background-color: white;
-    border-radius: 50%;
-    color: white;
+    border-radius: 20%;
+    color: black;
     width: 10px;
     height: 10px;
 }
@@ -72,4 +120,11 @@ h4{
     color: green;
     width: 10px;
     height: 10px;
+}
+
+.title{
+    border: #ddd;
+    display: flex;
+    align-items: stretch;
+    gap: 40%;
 }
