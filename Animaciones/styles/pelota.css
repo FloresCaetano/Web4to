@@ -20,6 +20,7 @@
 .bola {
     position: absolute;
     background-color: red;
+    border-radius: 50%;
     width: 5%;
     height: 5%;
     color: red;
@@ -29,6 +30,7 @@
 }
 
 .barra {
+    border-radius: 20px;
     transform: translate(-50%, 50%);
     position: absolute;
     background-color: green;
@@ -46,7 +48,7 @@
 
     25% {
         left: 50%;
-        top: 75%;
+        top: 77%;
     }
 
     50% {
@@ -56,7 +58,7 @@
 
     75% {
         left: 50%;
-        top: 75%;
+        top: 77%;
     }
 
     100% {
