@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    background-color: aquamarine;
+}
+
+@keyframes cambioColores{
+    0% {
+        background-color: #e8504f;
+    }
+    25% {
+        background-color: #ffa157;
+        transform: scale(0.5);
+    }
+    50% {
+        background-color: #ffa157;
+        transform: scale(1.1);
+    }
+    75% {
+        background-color: #e8504f;
+        transform: scale(0.5);
+    }
+    100% {
+        background-color: #ffa157;
+    }
+}
+
+.circulo {
+    background-color: #e8504f;
+    width: 100px;
+    height: 100px;
+
+    animation-name: cambioColores, volar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes volar {
+    0% {}
+
+    20% {
+        transform: translate(200px, 0px) rotate(90deg);
+    }
+
+    30% {
+        transform: translate(200px, 0px) rotate(90deg);
+    }
+
+    40% {
+        transform: translate(200px, 200px) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(200px, 200px) rotate(180deg);
+    }
+
+    100% {}
+}
