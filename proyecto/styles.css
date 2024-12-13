@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    font-family: monospace;
+}
+
+.first-section{
+    background-color: #282832;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-section-info{
+    margin-left: 5%;
+    width: 60%;
+    color: wheat;
+    margin-bottom: 5%;
+}
+
+.title{
+    font-size: 500%;
+}
+
+.title-description{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.proyects{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.my-work-title{
+    font-size: 300%;
+    color: #282832;
+    margin-top: 20%;
+    position: relative;
+}

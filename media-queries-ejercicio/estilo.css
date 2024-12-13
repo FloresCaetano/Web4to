@@ -1,0 +1,76 @@
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 1280px) {
+    .contenedor{
+        background-color: brown;
+    }
+    .imagen{
+        animation: pequeño 3s ease infinite;
+    }
+}
+
+@media (max-width: 1279px) {
+    .contenedor{
+        background-color:  aquamarine;
+    }
+    .imagen{
+        animation: pequeño-mediano 3s ease infinite;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor{
+        background-color: blue;
+    }
+    .imagen{
+        animation: mediano 3s ease infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor{
+        background-color: chocolate;
+    }
+    .imagen{
+        animation: grande 3s ease infinite;
+    }
+}
+
+@keyframes pequeño {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes pequeño-mediano {
+    0%{
+        transform: translate();
+    }
+    100%{
+        transform: translate(20%);
+    }
+}
+
+@keyframes mediano {
+    0%{
+        transform: translate();
+    }
+    100%{
+        transform: translate(-20%);
+    }
+}
+
+@keyframes grande {
+    0%{
+        transform: translate();
+    }
+    100%{
+        transform: translate(0, 20%);
+    }
+}
