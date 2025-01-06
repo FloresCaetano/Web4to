@@ -16,11 +16,11 @@ const esPar = (num) => {
     return num % 2 === 0 ? "El número es par" : "El número es impar";
   };
 
-setTimeout(function(){
+(function(){
     let num1 = 1;
     let num2 = 10;
     let num3 = 20;
     console.log(calcularPromedio(num1, num2, num3));
     console.log(determinarMayor(num1, num2));
     console.log(esPar(num1)); 
-}, 2000)
+}())
