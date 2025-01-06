@@ -181,3 +181,14 @@ if (undefined == coconut){
 }else {
     console.log(" Esta definido")
 }
+
+const operaciones = { sumar: (a, b) => a + b,
+    restar: (a, b) => a - b,
+    multiplicar: (a, b) => a * b,
+    dividir: (a, b) => a / b,
+};
+
+console.log(operaciones.sumar(2,3));
+console.log(operaciones.restar(2,3));
+console.log(operaciones.multiplicar(2,3));
+console.log(operaciones.dividir(2,3));
