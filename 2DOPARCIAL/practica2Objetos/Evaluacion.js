@@ -14,9 +14,9 @@ class Producto{
 class ProductoVendido extends Producto{ //Clase que hereda de producto para almacenar un historial de productos ya vendidos
     ventaTotal;
     fechaVenta;
-    $ciComprador;
+    $ciComprador; //Variable privada protegiendo la informacion del comprador
 
-    set(fechaVenta, venta, ciComprador){
+    set(fechaVenta, venta, ciComprador){ //Set para poder almacenar los nuevos datos en adicion con la cedula del comprador.
         this.ventaTotal += venta;
         this.fechaVenta = fechaVenta;
         this.$ciComprador = ciComprador; 
@@ -128,4 +128,5 @@ tienda.imprimirReporte();
 tienda.realizarVenta("Leche", 1);
 tienda.imprimirReporte();
 
+console.log(tienda.ventasRealizadas);
 //inventario.listarPorCategoria("alimento"); EJEMPLO DE COMO LISTAR POR CATEGORIA
