@@ -116,7 +116,7 @@ orden1.mostrarOrden();
 
 let order2 = new Orden();
 let producto3 = new Producto('Cinturon', 50, 10, 'Accesorios');
-let producto4 = new Producto('Bolso', 150, 3, 'Accesorios');
+let producto4 = new Producto('Bolso', 150, 1, 'Accesorios');
 let producto5 = new Producto('Relog', 250, 5, 'Tecnologia');
 order2.agregarProducto(producto3);
 order2.agregarProducto(producto1);
@@ -127,6 +127,11 @@ order2.agregarProducto(producto5);
 order2.aplicarDescuento('Tecnologia', 20);
 
 order2.mostrarOrden();
+
+let orden3 = new Orden()
+orden3.agregarProducto(producto3);
+orden3.agregarProducto(producto4);
+orden3.mostrarOrden();
 
 //Ejercicio RETO
 
@@ -142,3 +147,5 @@ order2.mostrarOrden();
 5. Restriccion adicional:
     Aseguremos que los precios no pueden ser negativos al establecerlos en la clase producto
 */
+
+//let producto8 = new Producto('Relog', -1, 5, 'Tecnologia');
