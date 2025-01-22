@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="entrar()">
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">Evento OnClick</h1>
+    <br>
+    <br>
+    <br>
+    <form action="" id="formulario">
+        apellido : <input type="text" id="apellido">
+    </form>
+    <script>
+        let formulario = document.getElementById('formulario');
+
+        formulario.addEventListener('blur', (evento) => {
+            evento.target.style.background = 'red';
+        }, true);
+    </script>
+</body>
+</html>

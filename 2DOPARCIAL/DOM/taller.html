@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller imagen</title>
+</head>
+<body>
+    <img id="imgVaca" src="./media/vaca1.jpg" alt="Vaca" height="500px"> <br>
+    Intervalo: <input type="text" id="nombre" name="nombre" value="2000"> <br>
+    <button id="btnMostrar" onclick="iniciar()" type="submit">Iterar imagenes</button>
+    <button id="btnParar" onclick="detener()" type="submit">Detener intervalo</button>
+    <br>
+    <div id="label"></div>
+</body>
+<script>
+    let indice = 2;
+    function iterarImagen(){
+        let img = document.getElementById('imgVaca');
+        img.src = `./media/vaca${indice}.jpg`;
+        indice++;
+        if(indice > 5){
+            indice = 1;
+        }
+    }
+    let interval;
+    function iniciar(){
+        let intervalo = document.getElementById('nombre').value;
+        interval = setInterval(iterarImagen, intervalo);
+        document.getElementById('label').innerHTML = "Iteracion activa";
+    }
+    function detener(){
+        clearInterval(interval);
+        document.getElementById('label').innerHTML = "Iteracion inactiva";
+    }
+</script>
+
+</html>

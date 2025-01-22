@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+    <title>formularios DOM en JS</title>
+</head>
+<body>
+    <form action="" id="formulario">
+        Nombre: <input type="text" id="nombre" name="nombre" value="juan"> <br>
+        Apellido: <input type="text" id="apellido" name="apellido" value="perez"> <br>
+        Correo: <input type="email" id="correo" name="correo" value= "Juan.perez@gmail.com"> <br> 
+    </form>
+    <button id="btnMostrar" onclick="mostrarValores()" type="submit">Mostrar valores</button>
+    <br>
+    <div id="valores"></div>
+</body>
+<script>
+    function mostrarValores(){
+        let formulario = document.forms['formulario'];
+        let texto = '';
+
+        for(const element of formulario){
+            texto += `${element.value} <br>`;
+        }
+
+        document.getElementById('valores').innerHTML = texto;
+
+        //de manera individual
+        let nombre = formulario['nombre'].value;
+        let apellido = formulario['apellido'].value;
+        let correo = formulario['correo'].value;
+        document.getElementById('valores').innerHTML = `Nombre: ${nombre} <br> Apellido: ${apellido} <br> Correo: ${correo}`;
+        document.write('hola');
+    }
+</script>
+</html>

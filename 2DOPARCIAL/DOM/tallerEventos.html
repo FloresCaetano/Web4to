@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller</title>
+</head>
+
+<body>
+    <h1 id="titulo">Taller</h1>
+    
+    <button type="button" id="btnMostrarPanel">Mostrar Panel</button>
+    <div id="panel_de_configuracion" style="display: none;">
+        <h3>----PANEL DE CONFIGURACION-----</h3>
+        Color Pagina: <select id="opciones_fondo">
+            <option value="white">Claro</option>
+            <option value="grey">Oscuro</option>
+            <option value="blue">Azul</option>
+        </select>
+        <br>
+        Titulo Pagina: <input type="text" id="txt_nuevo_titulo">
+        <br>
+        Mostrar comentarios: <input type="checkbox" id="chk_mostrar_comentarios">
+        <h3>------------------------------</h3>
+    </div>
+    <ul>
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+        <li>Elemento5</li>
+    </ul>
+    <input type="text" id="nuevo_elemento">
+    <button id="btnAgregar">Agregar nuvevo elemento</button>
+    <textarea id="comentarios" style="display: none;"></textarea>
+</body>
+
+
+<!-- CODIGO -->
+<script>
+
+    let btnMostrarPanel = document.getElementById('btnMostrarPanel');
+    btnMostrarPanel.addEventListener('click', mostrar_panel);
+
+    function mostrar_panel(){
+        let panel = document.getElementById('panel_de_configuracion');
+        if(panel.style.display == 'none'){
+            panel.style.display = 'block';
+            btnMostrarPanel.innerHTML = 'Ocultar Panel';
+        }else{
+            panel.style.display = 'none';
+            btnMostrarPanel.innerHTML = 'Mostrar Panel';
+        }
+    }
+
+    let opcionesFondo = document.getElementById('opciones_fondo');
+    opcionesFondo.addEventListener('change', cambiarFondo);
+    function cambiarFondo(){
+        document.body.style.backgroundColor = opcionesFondo.value;
+    }
+
+    let txtNuevoTitulo = document.getElementById('txt_nuevo_titulo');
+    let titulo = document.getElementById('titulo');
+    txtNuevoTitulo.addEventListener('keyup', () => {
+        titulo.innerHTML = txtNuevoTitulo.value;
+    });
+
+    let chkMostrarComentarios = document.getElementById('chk_mostrar_comentarios');
+    chkMostrarComentarios.addEventListener('change', () => {
+        let comentarios = document.getElementById('comentarios');
+        if(chkMostrarComentarios.checked){
+            comentarios.style.display = 'block';
+        }else{
+            comentarios.style.display = 'none';
+        }
+    });
+
+
+    let btnAgregar = document.getElementById('btnAgregar');
+    btnAgregar.addEventListener('click', () => {
+        let nuevoElemento = document.getElementById('nuevo_elemento').value;
+        let lista = document.querySelector('ul');
+        let nuevoLi = document.createElement('li');
+        nuevoLi.innerHTML = nuevoElemento;
+        lista.appendChild(nuevoLi);
+    });
+
+    let lista = document.querySelector('ul');
+    lista.addEventListener('click', (evento) => {
+        if(evento.target.tagName == 'LI'){
+            evento.target.remove();
+        }
+    });
+
+</script>
+<!-- CODIGO -->
+
+</html>
